@@ -3,6 +3,8 @@ package main   // Makes file executable program
 import (
 	"fmt"
 	"log"
+
+
 	"example.com/greetings"
 )
 
@@ -11,7 +13,7 @@ func main() {
     // the log entry prefix and a flag to disable printing
     // the time, source file, and line number.
 	log.SetPrefix("greetings: ")
-	log.setFlags(0)
+	log.SetFlags(0)
 
 	message, err := greetings.Hello("")
 	// If an error was returned, print it to the console and
@@ -23,5 +25,5 @@ func main() {
 
 	// If no error was returned, print the returned message
 	// to the console.
-	fmt.println(message)
+	fmt.Println(message)
 }
